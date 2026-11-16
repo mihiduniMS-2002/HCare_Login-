@@ -1,0 +1,138 @@
+
+/* Register Messages */
+
+.success {
+    color: #168653;
+    background: #e6f8ef;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.error {
+    color: #d63031;
+    background: #fff0f0;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+/* Register Form */
+
+.auth-box {
+    max-width: 450px;
+}
+
+.auth-box input {
+    margin-bottom: 5px;
+}
+
+.auth-box button {
+    font-weight: bold;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f3fa;
+}
+
+.auth-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth-box {
+    width: 400px;
+    padding: 35px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.logo {
+    color: #5140a5;
+    text-align: center;
+}
+
+.auth-icon {
+    text-align: center;
+    font-size: 35px;
+}
+
+.auth-box h2 {
+    text-align: center;
+}
+
+.auth-description {
+    text-align: center;
+    color: #777;
+}
+
+.auth-box label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 7px;
+}
+
+.auth-box input {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.auth-box button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #5140a5;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.back-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.success {
+    color: green;
+}
+
+.error {
+    color: red;
+}
+
+.logout-link {
+    color: #7025d5;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.logout-link:hover {
+    text-decoration: underline;
+}
+.forgot-link {
+    text-align: right;
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+.forgot-link a,
+.back-link a {
+    color: #5140a5;
+    text-decoration: none;
+}
+
+.forgot-link a:hover,
+.back-link a:hover {
+    text-decoration: underline;
+}

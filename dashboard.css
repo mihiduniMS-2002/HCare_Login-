@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5fa;
+    color: #292638;
+}
+
+.dashboard {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar */
+
+.sidebar {
+    width: 210px;
+    background: white;
+    padding: 25px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    color: #6925cf;
+    margin-bottom: 35px;
+}
+
+.register-btn {
+    background: #7025d5;
+    color: white;
+    border: none;
+    padding: 13px;
+    border-radius: 7px;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sidebar nav a {
+    text-decoration: none;
+    color: #777487;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.sidebar nav a:hover,
+.sidebar nav a.active {
+    color: #7025d5;
+    background: #f1eaff;
+}
+
+.mobile-app {
+    margin-top: auto;
+    background: #f5edff;
+    padding: 15px;
+    font-size: 12px;
+    border-radius: 8px;
+}
+
+.mobile-app span {
+    color: #7025d5;
+    display: block;
+    margin-top: 10px;
+}
+
+/* Main Content */
+
+.main-content {
+    flex: 1;
+    padding: 25px 30px;
+    min-width: 0;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.topbar input {
+    padding: 11px;
+    border: 1px solid #eee;
+    border-radius: 7px;
+    width: 230px;
+}
+
+.profile {
+    font-size: 13px;
+}
+
+.logout-link {
+    color: #7025d5;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.logout-link:hover {
+    text-decoration: underline;
+}
+
+.subtitle {
+    color: #999;
+    margin-top: 8px;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+/* Summary Cards */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin-bottom: 25px;
+}
+
+.card {
+    background: white;
+    padding: 22px 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 3px 15px #ddd3;
+}
+
+.card h3 {
+    font-size: 20px;
+    margin-bottom: 7px;
+}
+
+.card p {
+    font-size: 12px;
+    color: #999;
+}
+
+.card-icon {
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+
+.purple { background: #f0e4ff; color: #7025d5; }
+.blue { background: #e3f5ff; color: #26a4d7; }
+.orange { background: #fff0e3; color: #ef8d42; }
+.pink { background: #ffe9f2; color: #ec5e99; }
+
+/* Chart Panels */
+
+.chart-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 18px;
+}
+
+.panel {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    min-height: 190px;
+}
+
+.panel h3 {
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.bar-chart {
+    height: 130px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    border-bottom: 1px solid #eee;
+}
+
+.bar-group {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    gap: 4px;
+    padding-bottom: 20px;
+}
+
+.bar {
+    width: 9px;
+    border-radius: 5px 5px 0 0;
+}
+
+.green { background: #20c99a; }
+.purple-bar { background: #7025d5; }
+
+.bar-group small {
+    position: absolute;
+    bottom: 0;
+    font-size: 10px;
+    color: #999;
+}
+
+.legend {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    font-size: 11px;
+    margin-top: 15px;
+    color: #777;
+}
+
+.donut {
+    width: 105px;
+    height: 105px;
+    margin: auto;
+    border-radius: 50%;
+    background: conic-gradient(
+        #7025d5 0deg 180deg,
+        #ff985c 180deg 290deg,
+        #20c99a 290deg 360deg
+    );
+    position: relative;
+}
+
+.donut::after {
+    content: "";
+    position: absolute;
+    inset: 23px;
+    background: white;
+    border-radius: 50%;
+}
+
+.line-chart {
+    margin-top: 20px;
+}
+
+.chart-note {
+    font-size: 10px;
+    color: #999;
+}
+
+.division p {
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 12px;
+}
+
+.division b {
+    float: right;
+}
+
+.purple-card {
+    background: linear-gradient(120deg, #8434e9, #6200d4);
+    color: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.purple-card h2 {
+    font-size: 28px;
+}
+
+.purple-card p {
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+.wave {
+    margin: 40px 0 25px;
+    font-size: 25px;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .chart-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .sidebar {
+        width: 65px;
+        padding: 15px 5px;
+    }
+
+    .sidebar .logo {
+        font-size: 12px;
+    }
+
+    .sidebar nav a {
+        font-size: 11px;
+        padding: 10px 3px;
+        overflow: hidden;
+    }
+
+    .register-btn,
+    .mobile-app {
+        display: none;
+    }
+
+    .main-content {
+        padding: 15px;
+    }
+
+    .cards,
+    .chart-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .topbar input {
+        width: 130px;
+    }
+}
